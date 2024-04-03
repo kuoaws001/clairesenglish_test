@@ -1,0 +1,18 @@
+{
+  "name": "clairesenglish_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kuoaws001/clairesenglish_test.git",
+  "author": "chris.kuo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
