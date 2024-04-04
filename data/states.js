@@ -1,9 +1,9 @@
 module.exports = [
-    'Alabama',
-    'Alaska',
-    'California',
-    'Virginia',
-    'West Virginia',
-    'Montana',
     'Vermont',
+    'Montana',
+    'Virginia',
+    'Alabama',
+    'California',
+    'Alaska',
+    'West Virginia',
 ]
