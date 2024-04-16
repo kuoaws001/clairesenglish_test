@@ -1,5 +1,8 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const z = require('zod');
+const validateData = require('../util/validate');
+
 require('dotenv').config();
 
 const router = express.Router();
@@ -15,9 +18,12 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-router.post('/', (req, res, next) => {
+const post_email_schema = z.object({
+    to: z.string().email(),
+})
+
+router.post('/', validateData(post_email_schema), (req, res) => {
     const { to, subject, body } = req.body;
-    // TODO : add server side validation
 
     const mailOptions = {
         from: 'kuolearnaws@gmail.com',
