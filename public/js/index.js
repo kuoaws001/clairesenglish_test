@@ -12,7 +12,7 @@ function initStatesDropdown() {
             let html = '';
 
             states.map((x, i) => {
-                html += `<li key=${i}>${x}</li>`
+                html += `<li key=${i}>${x.name}</li>`
             })
 
             $(".dropdown-menu").append(html);
